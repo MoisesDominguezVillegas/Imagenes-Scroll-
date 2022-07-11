@@ -1,0 +1,52 @@
+:root{
+    --ColorMainScroll:darkcyan;
+    --ColorThumbScroll: greenyellow;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body::-webkit-scrollbar{
+    background-color: var(--ColorMainScroll);
+    border-radius: 2rem;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--ColorThumbScroll);
+    border-radius: 2rem;
+    height: 15rem;
+}
+.container{
+    width: 100%;
+    position: relative;
+}
+section{
+    position:sticky;
+    top:0;
+    width:100%;
+    height: 100vh;
+    background-size: cover !important ;
+    background-position: center !important;
+}
+
+/* El !important es mala práctica, pero en esete caso lo ponemos para no duplicar lineas de código en las respectivas secciones y al quitar el !important no funciona y las imagenes se rompen en la web*/
+
+section:nth-child(1){
+    background: url(../img/background1.jpg);
+}
+section:nth-child(2){
+    background: url(../img/background2.jpg);
+}
+section:nth-child(3){
+    background: url(../img/background3.jpg);
+}
+section:nth-child(4){
+    background: url(../img/background4.jpg);
+}
+section:nth-child(5){
+    background: url(../img/background5.jpg);
+}
+
+
+
